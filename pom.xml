@@ -21,15 +21,16 @@
   <distributionManagement>
     <repository>
       <id>bds-int-public</id>
-      <url>https://updates.suite.blackducksoftware.com/integrations/</url>
+      <url>${bds.int.public.repository.url}</url>
     </repository>
     <snapshotRepository>
       <id>bds-int-public</id>
-      <url>https://updates.suite.blackducksoftware.com/integrations/</url>
+      <url>${bds.int.public.repository.url}</url>
     </snapshotRepository>
   </distributionManagement>
 
   <properties>
+    <bds.int.public.repository.url>https://updates.suite.blackducksoftware.com/integrations/</bds.int.public.repository.url>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
@@ -43,7 +44,7 @@
         <updatePolicy>always</updatePolicy>
       </snapshots>
       <id>bds-int-public</id>
-      <url>https://updates.suite.blackducksoftware.com/integrations/</url>
+      <url>${bds.int.public.repository.url}</url>
     </repository>
     <repository>
       <id>bintray-bds-integration</id>
