@@ -37,12 +37,18 @@
 
   <repositories>
     <repository>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+      <id>bds-int-public</id>
+      <url>https://updates.suite.blackducksoftware.com/integrations/</url>
+    </repository>
+    <repository>
       <id>bintray-bds-integration</id>
       <url>http://dl.bintray.com/bds/integration/</url>
     </repository>
     <repository>
       <id>maven-restlet</id>
-      <name>Public online Restlet repository</name>
       <url>http://maven.restlet.org</url>
     </repository>
   </repositories>
