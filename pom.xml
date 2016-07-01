@@ -7,6 +7,9 @@
   <version>1.0.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <name>Common Maven Parent POM</name>
+  <description>The parent pom for oss Black Duck Software libraries and integrations.</description>
+  <url>https://www.github.com/blackducksoftware/common-maven-parent</url>
   <organization>
     <name>Black Duck Software, Inc.</name>
     <url>http://www.blackducksoftware.com/</url>
@@ -18,6 +21,25 @@
     </license>
   </licenses>
 
+  <developers>
+    <developer>
+      <id>blackduckoss</id>
+      <name>Black Duck OSS</name>
+      <email>bdsoss@blackducksoftware.com</email>
+      <organization>Black Duck Software, Inc.</organization>
+      <organizationUrl>http://www.blackducksoftware.com</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>America/New_York</timezone>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/blackducksoftware/common-maven-parent.git/</connection>
+    <developerConnection>scm:git:git@github.com:blackducksoftware/common-maven-parent.git</developerConnection>
+    <url>https://www.github.com/blackducksoftware/common-maven-parent</url>
+  </scm>
   <distributionManagement>
     <repository>
       <id>bds-int-public</id>
@@ -31,12 +53,12 @@
 
   <properties>
     <bds.int.public.repository.url>https://updates.suite.blackducksoftware.com/integrations/</bds.int.public.repository.url>
+    <junit.version>4.12</junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
     <source.java.version>1.7</source.java.version>
     <target.java.version>1.7</target.java.version>
-    <junit.version>4.12</junit.version>
   </properties>
 
   <repositories>
