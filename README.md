@@ -6,14 +6,14 @@ In order to use this parent pom in your project you will need to include the fol
   <parent>
     <groupId>com.blackducksoftware.integration</groupId>
     <artifactId>common-maven-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.6</version>
     <relativePath>../common-maven-parent</relativePath>
   </parent>
 ```
 
 (the relative path is optional)
 
-You will also need to specify the Black Duck Software public repository so you can download the artifact.
+The artifact is available on Maven Central here: [http://repo1.maven.org/maven2/com/blackducksoftware/integration/common-maven-parent/]
 
 
 ## License ##
