@@ -4,7 +4,7 @@
 
   <groupId>com.blackducksoftware.integration</groupId>
   <artifactId>common-maven-parent</artifactId>
-  <version>1.0.9-SNAPSHOT</version>
+  <version>1.1.0</version>
   <packaging>pom</packaging>
 
   <name>Common Maven Parent POM</name>
@@ -295,6 +295,9 @@
                       <goal>filter-test-plugin-descriptor</goal>
                       <goal>generate-rest-docs</goal>
                       <goal>filter-plugin-descriptor</goal>
+                      <goal>generate-manifest</goal>
+                      <goal>generate-test-manifest</goal>
+                      <goal>copy-test-bundled-dependencies</goal>
                     </goals>
                   </pluginExecutionFilter>
                   <action>
