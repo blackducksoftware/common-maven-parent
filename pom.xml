@@ -167,9 +167,6 @@
               </goals>
             </execution>
           </executions>
-          <configuration>
-            <additionalparam>-Xdoclint:none</additionalparam>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -464,6 +461,15 @@
           <url>${bds.int.public.repository.url}</url>
         </snapshotRepository>
       </distributionManagement>
+    </profile>
+    <profile>
+      <id>disable-java8-doclint</id>
+      <activation>
+        <jdk>[1.8,)</jdk>
+      </activation>
+      <properties>
+        <additionalparam>-Xdoclint:none</additionalparam>
+      </properties>
     </profile>
   </profiles>
 </project>
