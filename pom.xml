@@ -4,7 +4,7 @@
 
   <groupId>com.blackducksoftware.integration</groupId>
   <artifactId>common-maven-parent</artifactId>
-  <version>1.1.6-SNAPSHOT</version>
+  <version>1.2.0</version>
   <packaging>pom</packaging>
 
   <name>Common Maven Parent POM</name>
@@ -252,6 +252,12 @@
                 <useSubDirectoryPerScope>true</useSubDirectoryPerScope>
                 <outputDirectory>${project.build.directory}/libs</outputDirectory>
               </configuration>
+            </execution>
+            <execution>
+              <phase>install</phase>
+              <goals>
+                <goal>analyze</goal>
+              </goals>
             </execution>
           </executions>
         </plugin>
