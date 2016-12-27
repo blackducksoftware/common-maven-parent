@@ -4,7 +4,7 @@
 
   <groupId>com.blackducksoftware.integration</groupId>
   <artifactId>common-maven-parent</artifactId>
-  <version>2.2.2-SNAPSHOT</version>
+  <version>2.2.2</version>
   <packaging>pom</packaging>
 
   <name>Common Maven Parent POM</name>
@@ -90,12 +90,6 @@
       <groupId>org.mockito</groupId>
       <artifactId>mockito-all</artifactId>
       <version>1.10.19</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>nl.jqno.equalsverifier</groupId>
-      <artifactId>equalsverifier</artifactId>
-      <version>2.1.6</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -190,7 +184,9 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.</inlineHeader>
             <includes>
-              <include>src/main/**</include>
+              <include>src/**/*.java</include>
+              <include>src/**/*.groovy</include>
+              <include>src/**/*.js</include>
             </includes>
           </configuration>
         </plugin>
