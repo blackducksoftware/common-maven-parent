@@ -170,7 +170,7 @@
           <configuration>
             <inlineHeader>${project.name}
 
-Copyright (C) ${current.year} ${organization.name}.
+Copyright (C) ${current.year} ${organization.name}
 ${organization.url}
 
 Licensed to the Apache Software Foundation (ASF) under one
