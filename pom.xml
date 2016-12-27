@@ -4,7 +4,7 @@
 
   <groupId>com.blackducksoftware.integration</groupId>
   <artifactId>common-maven-parent</artifactId>
-  <version>2.2.3-SNAPSHOT</version>
+  <version>2.2.3</version>
   <packaging>pom</packaging>
 
   <name>Common Maven Parent POM</name>
@@ -44,7 +44,7 @@
 
   <properties>
     <bds.int.public.repository.url>https://updates.suite.blackducksoftware.com/integrations/</bds.int.public.repository.url>
-    <hub.maven.plugin.version>1.1.0</hub.maven.plugin.version>
+    <hub.maven.plugin.version>1.4.0</hub.maven.plugin.version>
     <junit.version>4.12</junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
