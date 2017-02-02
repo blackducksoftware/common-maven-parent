@@ -4,7 +4,7 @@
 
   <groupId>com.blackducksoftware.integration</groupId>
   <artifactId>common-maven-parent</artifactId>
-  <version>2.2.5-SNAPSHOT</version>
+  <version>2.2.5</version>
   <packaging>pom</packaging>
 
   <name>Common Maven Parent POM</name>
@@ -164,8 +164,8 @@
           <configuration>
             <inlineHeader>${project.name}
 
-Copyright (C) ${current.year} ${organization.name}
-${organization.url}
+Copyright (C) ${current.year} ${project.organization.name}
+${project.organization.url}
 
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements. See the NOTICE file
