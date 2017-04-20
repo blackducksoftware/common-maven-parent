@@ -44,7 +44,6 @@
 
   <properties>
     <bds.int.public.repository.url>https://updates.suite.blackducksoftware.com/integrations/</bds.int.public.repository.url>
-    <hub.maven.plugin.version>1.4.0</hub.maven.plugin.version>
     <junit.version>4.12</junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
