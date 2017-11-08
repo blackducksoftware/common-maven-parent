@@ -43,7 +43,8 @@
   </scm>
 
   <properties>
-    <bds.int.public.repository.url>https://updates.suite.blackducksoftware.com/integrations/</bds.int.public.repository.url>
+    <bds.int.public.repository.release.url>https://test-repo.blackducksoftware.com/artifactory/bds-integrations-release/</bds.int.public.repository.release.url>
+    <bds.int.public.repository.snapshot.url>https://test-repo.blackducksoftware.com/artifactory/bds-integrations-snapshot/</bds.int.public.repository.snapshot.url>
     <junit.version>4.12</junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -65,8 +66,12 @@
       <snapshots>
         <updatePolicy>always</updatePolicy>
       </snapshots>
-      <id>bds-int-public</id>
-      <url>${bds.int.public.repository.url}</url>
+      <id>bds-artifactory</id>
+      <url>${bds.int.public.repository.snapshot.url}</url>
+    </repository>
+    <repository>
+      <id>ha-bds-artifactory</id>
+      <url>${bds.int.public.repository.release.url}</url>
     </repository>
     <repository>
       <id>bintray-bds-integration</id>
@@ -631,12 +636,12 @@ under the License.</inlineHeader>
       </activation>
       <distributionManagement>
         <repository>
-          <id>bds-int-public</id>
-          <url>${bds.int.public.repository.url}</url>
+          <id>ha-bds-artifactory</id>
+          <url>${bds.int.public.repository.release.url}</url>
         </repository>
         <snapshotRepository>
-          <id>bds-int-public</id>
-          <url>${bds.int.public.repository.url}</url>
+          <id>ha-bds-artifactory</id>
+          <url>${bds.int.public.repository.snapshot.url}</url>
         </snapshotRepository>
       </distributionManagement>
     </profile>
