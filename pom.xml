@@ -4,7 +4,7 @@
 
   <groupId>com.blackducksoftware.integration</groupId>
   <artifactId>common-maven-parent</artifactId>
-  <version>4.0.2-SNAPSHOT</version>
+  <version>4.0.2</version>
   <packaging>pom</packaging>
 
   <name>Common Maven Parent POM</name>
@@ -43,8 +43,8 @@
   </scm>
 
   <properties>
-    <bds.int.public.repository.release.url>https://test-repo.blackducksoftware.com/artifactory/bds-integrations-release/</bds.int.public.repository.release.url>
-    <bds.int.public.repository.snapshot.url>https://test-repo.blackducksoftware.com/artifactory/bds-integrations-snapshot/</bds.int.public.repository.snapshot.url>
+    <bds.int.public.repository.release.url>https://prd-eng-repo02.dc2.lan/artifactory/bds-integrations-release/</bds.int.public.repository.release.url>
+    <bds.int.public.repository.snapshot.url>https://prd-eng-repo02.dc2.lan/artifactory/bds-integrations-snapshot/</bds.int.public.repository.snapshot.url>
     <junit.version>4.12</junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
